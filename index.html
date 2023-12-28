@@ -3,25 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Vishesh Rathor - Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/117b4ef044.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Vishesh Rathor</span><br>from Bharat</h1>
+            </div>
+        </div>
+    </div>
 
-    <div class="todo-app">
-        <h2>To-Do List <img src="icon.png"></h2>
 
-        <div class="row">
-            <input type="text" id="input-box"placeholder="Add your Text">
-            <button onclick="addTask()">Add Task</button>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="phone-background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nulla fugiat dolore ea officiis 
+                        quidem sunt debitis obcaecati repellat dolorem odio pariatur id iste quos minima earum repellendus. 
+                        Nostrum officiis corporis dolore facere modi.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                                <li><span>2019 - 2021</span><br>Team Lead at StartApp LLC</li>
+                                <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                <li><span>2016 - 2017</span><br>internship at ekart eCommerce.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                                <li><span>2015</span><br>MBA from MIT Bangalore</li>
+                                <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Services------->
+
+    <div id="services">
+        <div class="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quaerat harum natus pariatur 
+                        ipsam perferendis iusto, iure nemo error culpa. Soluta debitis eaque at?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quaerat harum natus pariatur 
+                        ipsam perferendis iusto, iure nemo error culpa. Soluta debitis eaque at?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quaerat harum natus pariatur 
+                        ipsam perferendis iusto, iure nemo error culpa. Soluta debitis eaque at?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------portfolio------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="user.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        omnis ducimus fugiat quaerat consectetur. Adipisci qui </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        omnis ducimus fugiat quaerat consectetur. Adipisci qui </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
+                        omnis ducimus fugiat quaerat consectetur. Adipisci qui</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------Contact------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 27354476xx</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                    
+                </div>
+                <div class="contact-rigth">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required> 
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
         </div>
 
-        <ul id="list-container">
-            <!--<li class="checked">Task 1</li>
-            <li>Task 1</li>
-            <li>Task 1</li>-->
-        </ul>
+        <div class="copyright">
+            <p>Copyright @ Vishesh. Made with <i class="fa-solid fa-heart"></i> by Praveena Acharya</p>
+        </div>
     </div>
-    <script src="app.js"></script>    
+
+
+
+    <script src="index.js"></script>
+   
 </body>
 </html>
